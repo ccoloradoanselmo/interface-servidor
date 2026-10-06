@@ -1,3 +1,57 @@
+<<<<<<< HEAD
+
+/* 
+
+Form: 1000px (ventana) − 16px (margin por defecto del body, 8+8) − 80px (margin del form, 40+40) = 904px de ancho total.
+
+Contenido del form: 904px − 4px (border, 2+2) − 40px (padding, 20+20) = 860px de ancho de contenido.
+
+H2: 860px de ancho, porque es un elemento de bloque y ocupa todo el ancho disponible del contenido del form.
+
+Input de horas: ≈ 200px de ancho total, porque su ancho de contenido es ≈185px + 16px de padding (8+8) + 2px de borde.
+
+Textarea: ≈ 200px de ancho total, porque usa su tamaño por defecto + 16px de padding (8+8) + borde.
+
+Textarea en altura: 100px (contenido) + 16px (padding, 8+8) + 2px (borde) = 118px de alto total. 
+
+*/
+
+
+
+*{
+    font-family: Verdana;
+}
+
+
+html{
+  width: 1000px;
+  margin: 0 auto;
+}
+form {
+  background-color: #f2f6fc;
+  border: 2px solid #3b5b92;
+  margin: 40px;     /* separación por fuera */
+  padding: 20px;    /* separación por   dentro (shorthand) */
+  
+}
+
+form h2, textarea {
+  color: #3b5b92;
+  
+  border-bottom: 1px solid #3b5b92;
+}
+
+
+textarea {
+  resize: none; /* Para que sea fijo el textarea */
+  height: 100px;
+  padding: 8px; /* Separacion dentro del textarea */
+}
+
+/* Separación dentro del input de horas */
+#horas {
+  padding: 8px;
+=======
 
 
 /* Por tanto el ancho del form: 
@@ -31,4 +85,5 @@ textarea {
 /* Separación dentro del input de horas */
 #horas {
   padding: 8px;
+>>>>>>> 31619288d5a1ba00f983781af29ea2411b236b5b
 }
